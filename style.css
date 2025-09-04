@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 button {
   color: var(--background-secondary);
@@ -31,7 +31,7 @@ button {
   padding: 23px 79px;
   width: fit-content;
   margin-bottom: 63px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .background {
   background: url("./imgs/background.jpg");
@@ -97,6 +97,7 @@ button {
   font-size: var(--font-size-sm);
   color: var(--color-primary);
   width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 .form__input::placeholder {
   color: var(--color-primary);
