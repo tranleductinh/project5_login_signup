@@ -43,7 +43,8 @@ button {
   width: 100%;
   max-width: 690px;
   height: 100%;
-  border-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: var(--background-secondary);
   display: flex;
   padding: 0 120px;
