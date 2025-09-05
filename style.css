@@ -91,6 +91,9 @@ button {
   font-weight: bold;
   color: var(--background-secondary);
 }
+.form__icon svg {
+  fill: #ffffff;
+}
 .form__input {
   background-color: var(--background-accent);
   border: none;
