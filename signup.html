@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +19,8 @@
         <section class="auth__container">
           <div class="auth__form">
             <h1 class="auth__title">SIGNUP</h1>
-            <form class="form form--signup">
+            <div id="error"></div>
+            <form class="form form--signup" id="form">
               <div class="form__group-container">
                 <div class="form__group">
                   <div class="form__icon-container">
@@ -39,7 +41,8 @@
                     type="text"
                     class="form__input"
                     placeholder="Firstname"
-                    required
+                    name="firstname"
+                    
                   />
                 </div>
 
@@ -51,7 +54,7 @@
                     type="email"
                     class="form__input"
                     placeholder="Email"
-                    required
+                    name="email"
                   />
                 </div>
 
@@ -68,7 +71,7 @@
                     type="password"
                     class="form__input"
                     placeholder="Password"
-                    required
+                    name="password"
                   />
                 </div>
 
@@ -85,7 +88,7 @@
                     type="password"
                     class="form__input"
                     placeholder="Repeat Password"
-                    required
+                    name="repeatPassword"
                   />
                 </div>
               </div>
@@ -103,5 +106,6 @@
         </section>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

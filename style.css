@@ -32,6 +32,10 @@ button {
   width: fit-content;
   margin-bottom: 63px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  background: black;
 }
 .background {
   background: url("./imgs/background.jpg");
@@ -73,7 +77,6 @@ button {
 .form__group {
   display: flex;
   align-items: center;
-  gap: 10px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -91,9 +94,11 @@ button {
   font-weight: bold;
   color: var(--background-secondary);
 }
+
 .form__icon svg {
   fill: #ffffff;
 }
+
 .form__input {
   background-color: var(--background-accent);
   border: none;
@@ -102,17 +107,36 @@ button {
   color: var(--color-primary);
   width: 100%;
   font-family: "Poppins", sans-serif;
+  min-height: 58px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid transparent;
+  border-left: none;
+  outline: none;
+}
+input:focus:hover {
+  border-color: var(--color-primary);
+}
+
+input:hover {
+  border-color: var(--color-secondary);
 }
 .form__input::placeholder {
   color: var(--color-primary);
   opacity: 1;
 }
-.form__input:focus {
-  outline: none;
+div:has(input:focus) > .form__icon-container {
+  background-color: var(--color-primary);
 }
+
 .form__group {
   background-color: var(--background-accent);
 }
+a:hover {
+  text-decoration: underline !important;
+}
+
 .form__button {
   display: flex;
   justify-content: center;
